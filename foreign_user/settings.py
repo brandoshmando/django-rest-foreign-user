@@ -5,7 +5,7 @@ from rest_framework.settings import APISettings
 FOREIGN_USER_SETTINGS = getattr(settings, 'FOREIGN_USER_SETTINGS', {})
 
 DEFAULTS = {
-    'USER_SERIALIZER': None
+    'USER_SERIALIZER': 'foreign_user.serializers.DefaultSerializer'
 }
 
 IMPORT_STRINGS = {
